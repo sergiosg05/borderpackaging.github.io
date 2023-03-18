@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Jost', sans-serif;
+  }
+main{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(images/background_home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-home{
+    width: 100%;
+    height: 100vh;
+}
+.home-header{
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+}
+.logo{
+    width: 20%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.BP_logo{
+    width: 150px;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.link{
+    color: #4F1C12;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.link:hover{
+    background-color: #4F1C12;
+    color: white;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.showcase{
+    width: 100%;
+    height: calc(100vh - 150px);
+
+}
+.showcase-content{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+.showcase-content h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 1px;
+}
+.showcase-content p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: white;
+}
+.showcase-sm{
+    width:60%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(35vh);
+    letter-spacing: 7.5px;
+}
+.showcase-sm img{
+    height: 30px;
+}
+.footer{
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 50px;
+}
+.footer-content{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_ss{
+    margin: 5px;
+}
+.SS_logo{
+    width: 15px;
+}
+.footer-content h5{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4F1C12;
+    letter-spacing: 1px;
+}
+
+/* Contact Us Tab */
+
+.main-contactus{
+    width: 100%;
+    background-image: none;
+}
+.container-contactus{
+    width: 100%;
+    height: 100vh;
+}
+.contactus-header{
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+}
+.contactus{
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
+.contactus .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+.row section.col{
+    display: flex;
+    flex-direction: column;
+}
+/* Contact Us - section left */
+.contactus-left{
+    flex-basis: 45%;
+    min-width: 320px;
+    margin-right: 60px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.contacus-title h2{
+    position: relative;
+    font-size: 28px;
+    color: #4F1C12;
+    margin-bottom: 25px;
+}
+.contactus-info{
+    margin-bottom: 16px;
+}
+.contactus-icongroup{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.contactus-icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #4F1C12;
+    border-radius: 20%;
+    margin-right: 20px;
+    position: relative;
+}
+.contactus-icon i{
+    font-size: 20px;
+    color: #4F1C12;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactus-details span{
+    display: block;
+    color: #4F1C12;
+    font-size: 18px;
+}
+.contactus-sm{
+    text-align: left;
+    padding-top: 10px;
+    letter-spacing: 10px;
+}
+.contactus-sm img{
+    height: 40px;
+}
+/* Contact Us - end section left */
+
+/* Contact Us - section right */
+.contactus-right{
+    flex-basis: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.contactus-messageform{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.contactus-messageform .inputGroup{
+    margin: 18px 0px;
+    position: relative;
+}
+.contactus-messageform .halfWidth{
+    flex-basis: 48%;
+}
+.contactus-messageform .fullWidth{
+    flex-basis: 100%;
+}
+.contactus-messageform input, .contactus-messageform textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 0px;
+    color: #4F1C12;
+    border: none;
+    border-bottom: 2px solid #4F1C12;
+    outline: none;
+}
+.contactus-messageform textarea{
+    resize: none;
+    height: 220px;
+    display: block;
+}
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+textarea::-webkit-scrollbar-track{
+    border-radius: 15%;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: #4F1C12;
+    border-radius: 15px;
+}
+.contactus-messageform .inputGroup label{
+    color: #4F1C12;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+.contactus-messageform .inputGroup:nth-child(3) label{
+    top: 2px;
+}
+.inputGroup input:focus ~ label, .inputGroup textarea:focus ~ label{
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+.inputGroup button{
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: white;
+    color: #4F1C12;
+    border: 1px solid #4F1C12;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.03);
+    transition: 0.4s;
+}
+.inputGroup button:hover{
+    background-color: #4F1C12;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #4F1C12;
+}
+/* Contact Us - end section right */
+
+.contactus-footer{
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    height: 50px;
+}
+@media(max-width: 1100px){
+    .contactus-messageform .halfWidth{
+        flex-basis: 100%;
+    }
+}
+@media(max-width: 900px){
+    .contactus{
+        height: 900px;
+    }
+    .contactus .row{
+        flex-wrap: wrap;
+    }
+    .contactus-left, .contactus-right{
+        flex-basis: 100%;
+        margin: 0px;
+    }
+}
